@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>صدقة جارية | المهندس عادل هاشم حسين السعدابي</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #fff;
+  background: url("photo1.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: -1;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section {
+  background: rgba(255,255,255,0.96);
+  color: #333;
+  margin-bottom: 22px;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  margin: 10px 0;
+  font-size: 28px;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.photos img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+
+.zikr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.zikr span {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.counter button {
+  padding: 7px 16px;
+  font-size: 17px;
+  border: none;
+  background: #1e88e5;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.counter button:disabled {
+  background: #aaa;
+}
+
+.count {
+  font-weight: bold;
+  min-width: 32px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 35px;
+  padding: 20px 10px;
+  color: #fff;
+}
+
+.footer .name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.footer .role {
+  font-size: 15px;
+  opacity: 0.9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="photos">
+      <img src="photo1.jpg" alt="صورة المتوفى">
+      <img src="photo2.jpg" alt="صورة المتوفى">
+    </div>
+    <h1>صدقة جارية</h1>
+    <p>
+      عن روح المغفور له بإذن الله<br>
+      <strong>المهندس عادل هاشم حسين السعدابي</strong>
+    </p>
+  </div>
+
+  <!-- الأذكار -->
+  <div class="section">
+    <h2>📿 الأذكار</h2>
+
+    <div class="zikr">
+      <span>سبحان الله</span>
+      <div class="counter"><button onclick="inc(this)">+</button><span class="count">0</span></div>
+    </div>
+
+    <div class="zikr">
+      <span>الحمد لله</span>
+      <div class="counter"><button onclick="inc(this)">+</button><span class="count">0</span></div>
+    </div>
+
+    <div class="zikr">
+      <span>لا إله إلا الله</span>
+      <div class="counter"><button onclick="inc(this)">+</button><span class="count">0</span></div>
+    </div>
+
+    <div class="zikr">
+      <span>الله أكبر</span>
+      <div class="counter"><button onclick="inc(this)">+</button><span class="count">0</span></div>
+    </div>
+
+    <div class="zikr">
+      <span>لا حول ولا قوة إلا بالله</span>
+      <div class="counter"><button onclick="inc(this)">+</button><span class="count">0</span></div>
+    </div>
+
+    <div class="zikr">
+      <span>
+        سبحان الله وبحمده عدد خلقه ورضا نفسه
+        وزنة عرشه ومداد كلماته
+      </span>
+      <div class="counter"><button onclick="inc(this)">+</button><span class="count">0</span></div>
+    </div>
+  </div>
+
+  <!-- الدعاء -->
+  <div class="section">
+    <h2>🤲 الدعاء</h2>
+    <div class="zikr">
+      <span>
+        اللهم اغفر له وارحمه، وعافه واعفُ عنه،
+        وأكرم نزله، ووسع مدخله،
+        واجعل قبره روضة من رياض الجنة.
+      </span>
+      <div class="counter"><button onclick="inc(this)">+</button><span class="count">0</span></div>
+    </div>
+  </div>
+
+  <!-- الروابط -->
+  <div class="section">
+    <h2>📂 روابط نافعة نشرها المتوفى</h2>
+
+    <p>📁 مختارات</p>
+    <a href="https://www.mediafire.com/file/sv0mwbowpfib03d/مختارات.rar/file" target="_blank">
+      ⬇️ تحميل الملف
+    </a>
+
+    <hr>
+
+    <p>📖 القرآن كامل</p>
+    <a href="https://www.mediafire.com/file/l3ptw4i31eyxj5m/القرآن+كامل+ممنوع.rar/file" target="_blank">
+      ⬇️ تحميل الملف
+    </a>
+  </div>
+
+  <!-- واتساب -->
+  <div class="section" style="text-align:center;">
+    <a href="https://wa.me/?text=صدقة%20جارية%20عن%20روح%20المهندس%20عادل%20هاشم%20حسين%20السعدابي"
+       target="_blank"
+       style="background:#25D366;color:white;padding:14px 26px;
+       border-radius:10px;text-decoration:none;font-size:17px;font-weight:bold;">
+       📲 مشاركة على واتساب
+    </a>
+  </div>
+
+  <!-- الفوتر -->
+  <div class="footer">
+    <div>جعلها الله في ميزان حسناته 🤍</div>
+    <div class="name">ضياء رجب حسين</div>
+    <div class="role">إنشاء وتنفيذ</div>
+  </div>
+
+</div>
+
+<script>
+function inc(btn) {
+  const count = btn.nextElementSibling;
+  let num = parseInt(count.innerText);
+
+  if (num < 100) {
+    count.innerText = num + 1;
+  }
+
+  if (num + 1 === 100) {
+    btn.disabled = true;
+  }
+}
+</script>
+
+</body>
+</html>
+
