@@ -65,12 +65,18 @@ body::before {
 .zikr {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 14px;
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 10px;
   gap: 10px;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 .zikr span {
@@ -157,7 +163,10 @@ body::before {
     <span>الله أكبر</span>
     <div class="counter"><button onclick="inc(this)">+</button><span class="count">0</span></div>
   </div>
-
+<div class="zikr">
+    <span>لا حول ولا قوة الا بالله</span>
+    <div class="counter"><button onclick="inc(this)">+</button><span class="count">0</span></div>
+  </div>
   <!-- الصلاة على النبي -->
   <div class="zikr">
   <span style="color:#2e7d32; font-weight:bold;">
@@ -197,7 +206,7 @@ body::before {
     واغسله بالماء والثلج والبرد،  
     ونقِّه من الخطايا كما يُنقَّى الثوب الأبيض من الدنس،  
     وأبدله دارًا خيرًا من داره، وأهلًا خيرًا من أهله،  
-    وزوجًا خيرًا من زوجه،  
+     وزوجه من الحور العين،  
     وأدخله الجنة، وأعذه من عذاب القبر ومن عذاب النار.
   </p>
 
@@ -263,6 +272,7 @@ function inc(btn) {
   }
 }
 </script>
+
 
 
 
