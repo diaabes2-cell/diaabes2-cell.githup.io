@@ -232,8 +232,8 @@ body::before {
     <div class="name">ضياء رجب حسين</div>
     <div class="role">إنشاء وتنفيذ</div>
   </div>
-
 <script>
+/* ===== زر مشاركة واتساب ===== */
 function shareWhatsApp() {
   const url = window.location.href;
 
@@ -247,7 +247,24 @@ function shareWhatsApp() {
 
   window.open(whatsappUrl, "_blank");
 }
+
+/* ===== عداد الأذكار ===== */
+function inc(btn) {
+  const countSpan = btn.nextElementSibling;
+  let current = parseInt(countSpan.innerText);
+
+  if (current < 100) {
+    countSpan.innerText = current + 1;
+  }
+
+  if (current + 1 >= 100) {
+    btn.disabled = true;
+    btn.style.background = "#aaa";
+  }
+}
 </script>
+
+
 
 
 
